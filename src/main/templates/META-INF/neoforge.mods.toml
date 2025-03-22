@@ -20,13 +20,13 @@ license="${mod_license}"
 [[mods]] #mandatory
 
 # The modid of the mod
-modId="${mod_id}" #mandatory
+modId="vlps" #mandatory
 
 # The version number of the mod
-version="${mod_version}" #mandatory
+version="1.0" #mandatory
 
 # A display name for the mod
-displayName="${mod_name}" #mandatory
+displayName="VanillaPlus" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification https://docs.neoforged.net/docs/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
@@ -41,10 +41,10 @@ displayName="${mod_name}" #mandatory
 #credits="" #optional
 
 # A text field displayed in the mod UI
-authors="${mod_authors}" #optional
+authors="bakaoniisan" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''${mod_description}'''
+description='''Adds new mechanics and feature to vanilla minecraft(maybe:3)'''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 #[[mixins]]
@@ -58,7 +58,7 @@ description='''${mod_description}'''
 # The coremods config file path is not configurable and is always loaded from META-INF/coremods.json
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.${mod_id}]] #optional
+[[dependencies.vlps]] #optional
     # the modid of the dependency
     modId="neoforge" #mandatory
     # The type of the dependency. Can be one of "required", "optional", "incompatible" or "discouraged" (case insensitive).
@@ -68,7 +68,7 @@ description='''${mod_description}'''
     # Optional field describing why the dependency is required or why it is incompatible
     # reason="..."
     # The version range of the dependency
-    versionRange="${neo_version_range}" #mandatory
+    versionRange="[21,22)" #mandatory
     # An ordering relationship for the dependency.
     # BEFORE - This mod is loaded BEFORE the dependency
     # AFTER - This mod is loaded AFTER the dependency
@@ -77,7 +77,7 @@ description='''${mod_description}'''
     side="BOTH"
 
 # Here's another dependency
-[[dependencies.${mod_id}]]
+[[dependencies.vlps]]
     modId="minecraft"
     type="required"
     # This version range declares a minimum of the current minecraft version up to but not including the next major version
